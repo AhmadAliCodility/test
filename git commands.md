@@ -163,3 +163,11 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
         waste.html
 ```
+### Branching
+
+1. Create a new Branch<br>`git branch branchname`
+2. Check Branches<br> `git branch `
+3. Switch branches<br> `git checkout  branchname`
+4. 
+5. 
+
