@@ -189,3 +189,25 @@ git pull origin master
 ```
 
 
+### Fetch
+if someone add some code with new branch on your github and you dont have that branch locally and it is present in remotely so all branches remotely can be acces through this command locally
+
+```bash
+git checkout Test
+  error: pathspec 'Test' did not match any file(s) known to git
+--------------------------------------------
+git fetch origin
+  remote: Enumerating objects: 4, done.
+  remote: Counting objects: 100% (4/4), done.
+  remote: Compressing objects: 100% (2/2), done.
+  remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+  Unpacking objects: 100% (3/3), 642 bytes | 642.00 KiB/s, done.
+  From https://github.com/AhmadAliCodility/test
+  * [new branch]      Test       -> origin/Test
+-------------------------------------------
+git checkout Test
+  Branch 'Test' set up to track remote branch 'Test' from 'origin'.
+  Switched to a new branch 'Test'
+```
+
+
