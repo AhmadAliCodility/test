@@ -75,6 +75,12 @@ Untracked files:
 
 ```
 
+1. `git add -A `stages all changes
+2. `git add .` stages new files and modifications, without deletions (on the current directory and its subdirectories)
+3. `git add -u `stages modifications and deletions, without new files
+
+
+
 ### Commit
 ```bash
 git commit -m "First commit"
@@ -166,8 +172,20 @@ Untracked files:
 ### Branching
 
 1. Create a new Branch<br>`git branch branchname`
-2. Check Branches<br> `git branch `
+2. Check Branches<br> `git branch or git branch -a `
 3. Switch branches<br> `git checkout  branchname`
 4. Create and already switch to that branch <br> `git checkout -b branchname`
-5. 
+
+
+### PUSH
+
+```bash
+git push origin master
+```
+### PULL
+
+```bash
+git pull origin master
+```
+
 
