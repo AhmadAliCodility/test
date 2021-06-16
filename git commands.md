@@ -137,3 +137,8 @@ git diff
 ```bash
 git diff --staged
 ```
+### Skipped Staging Area
+
+```bash
+git commit -a -m "Skiped Staging Area"
+```
