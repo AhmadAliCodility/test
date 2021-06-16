@@ -82,14 +82,58 @@ git commit -m "First commit"
 
 ### Checkout 
 1. if some one change your file by mistake then this commandd will help you to recover your code back it  match with last commited file
-1. I change on the index file and save it now i run this command to back my code
+2. I change on the index file and save it now i run this command to back my code
 
 ```bash
 git checkout index.html
 ```
-3. If Someone change all of your files and in Git status you found all files modified  then this command will help you to back to your last commit
+1. If Someone change all of your files and in Git status you found all files modified  then this command will help you to back to your last commit
 
 Match with your previous commit and recover your file
 ```bash
 git checkout -f
+```
+
+### GIT LOG
+All of Your Commit Logs
+
+```bash
+git log
+commit d07e04aeb7f5ff95cceec19795d90867635de136 (HEAD -> master)
+Author: AhmadAliCodility <ahmed.ali@codilitysolutions.com>
+Date:   Wed Jun 16 11:43:08 2021 +0500
+
+    Markdown
+
+commit 5fa9e4da5e41edab300a238cf703c06919630bc9
+Author: AhmadAliCodility <ahmed.ali@codilitysolutions.com>
+Date:   Wed Jun 16 11:23:16 2021 +0500
+
+    second commit
+
+commit 5512b6397f869c494dad95111beb29e01089478f
+Author: AhmadAliCodility <ahmed.ali@codilitysolutions.com>
+Date:   Wed Jun 16 11:16:46 2021 +0500
+
+    Initial Commit
+
+``` 
+
+If you commited many files and you want to see some/last files then you use this command
+`-1 means last 1 file`
+```bash
+git log -p -1
+```
+
+### GIT Difference
+1. comapare working tree with staging area
+
+```bash
+git diff
+```
+
+1. comapare staging area with last commit
+
+```bash
+git diff --staged
 ```
