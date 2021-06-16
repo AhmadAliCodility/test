@@ -142,3 +142,24 @@ git diff --staged
 ```bash
 git commit -a -m "Skiped Staging Area"
 ```
+### Remove File
+
+1. Remove file from computer and staging area
+```bash
+git rm waste.html
+```
+1. Remove File only from stagging area
+
+```bash
+git rm --cached waste.html
+
+git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    waste.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        waste.html
+```
