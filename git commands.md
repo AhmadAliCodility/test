@@ -168,6 +168,6 @@ Untracked files:
 1. Create a new Branch<br>`git branch branchname`
 2. Check Branches<br> `git branch `
 3. Switch branches<br> `git checkout  branchname`
-4. 
+4. Create and already switch to that branch <br> `git checkout -b branchname`
 5. 
 
